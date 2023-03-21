@@ -1,0 +1,24 @@
+Documentation for 
+sandbox_checker
+ Function
+The 
+sandbox_checker
+ function takes in four parameters:
+
+url
+: The URL of the analytical tool to be used to scan the file.
+attachment_data
+: The data of the attachment to be scanned.
+attach_name
+: The name of the attachment to be scanned.
+submission_hash
+: The hash of the submission.
+api_key
+: The API key of the analytical tool.
+This function will scan the file using the analytical tool specified by the URL. If the scan returns a positive result, the malicious attachment will be reported.
+
+The function will return 
+True
+ if the attachment is safe and 
+False
+ if the attachment is malicious.
