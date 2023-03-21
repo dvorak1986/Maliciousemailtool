@@ -108,4 +108,15 @@ Check out the results of the test, if all pass, Congratulations! Otherwise, make
 Remember that this is a basic guide, and you may need to consider further steps depending on your specific use case.
 
 
+To execute the malicious email script, please follow the steps below:
+1.	Install the necessary libraries:
+•	pip install os
+•	pip install re
+•	pip install requests
+•	pip install fpdf
+2.	Copy the script into your project directory.
+3.	Run the script in the terminal or command line by typing 
+python <script_name>.py
+
+
 
