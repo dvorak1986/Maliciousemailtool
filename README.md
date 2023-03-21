@@ -119,4 +119,28 @@ To execute the malicious email script, please follow the steps below:
 python <script_name>.py
 
 
+To run this code successfully, you will need to enter the necessary API keys and information in the following locations:
+In the is_blacklisted() function, replace the placeholder value of api_key with your actual API key.
+In the sandbox_checker() function, replace the placeholder value of api_key with your actual API key.
+In the validate_attachments() function, replace the placeholder value of api_key with your actual API key.
+If you are using the check_url_reputation() function, no API key is needed.
+
+Make sure to also provide any email message or URLs necessary to test the code, such as passing them into relevant functions.
+
+
+The code doesn't specify which providers the API keys come from. You would need to obtain the API key(s) from the respective provider(s) for each API that is being used in the code.
+
+For example, if you want to use the VirusTotal API with this code, you would need to obtain an API key from VirusTotal and add it to the scan_file_param variable in the sandbox_checker function, like this:
+
+scan_file_param = {"apikey": "your_api_key_here"}
+
+You would also need to replace the placeholder values for other variables, such as api_url, ip_address, and submission_hash, with the appropriate values for your use case.
+
+Before running the code, make sure to install all required dependencies by running the following command:
+
+pip install requests fpdf
+
+Finally, to run the code, call the validate_attachments function with an email message object and your API key(s), like this:
+
+validate_attachments(email_message, "your_virustotal_api_key_here")
 
